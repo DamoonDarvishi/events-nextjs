@@ -12,7 +12,7 @@ function EventItem(props) {
 
   const formattedAddress = location.replace(", ", "\n");
 
-  const exploreLink = `/event/${id}`;
+  const exploreLink = `/events/${id}`;
 
   return (
     <li className="max-w-md mx-auto mb-2 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">

@@ -1,7 +1,11 @@
-import "tailwindcss/tailwind.css";
+// pages/_app.js
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import Layout from "../components/layout/Layout";
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
-
-export default MyApp;
